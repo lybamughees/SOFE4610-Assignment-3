@@ -63,7 +63,7 @@ python Sensor.py
 # Using the Program
 1. To control the program head to http://127.0.0.1:8000/control  
    NOTE: if you get an error you may need to post the following on the web interface, or ensure that Sensor.py is running.
-   * auto to the state list at http://127.0.0.1:8000/mode
+   * auto to the mode list at http://127.0.0.1:8000/mode
    * off to the state list at http://127.0.0.1:8000/state
 2. To control the program manually, select the "manual" radio button and select between ON or OFF.
 3. To use light detection, select the "auto" radio button and it will turn the light ON/OFF based on the light conditions.

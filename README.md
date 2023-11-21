@@ -24,6 +24,12 @@ Before running the code ensure that Django and djangorestframework are installed
 ```bash
     python3 manage.py makemigrations light
     python3 manage.py migrate
+    python3 manage.py createsuperuser
+    Username (leave blank to use 'pi'):
+    Email address: "leave blank"
+    Password: password123
+    Password (again): password123
+    Superuser created successfully.
 ```
 ### Running the Server on the PI
 

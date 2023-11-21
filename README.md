@@ -1,16 +1,18 @@
 # SOFE4610-Assignment-3  
 
 # Code Explanation
-Root:  
+**Root:**  
 Sensor.py - Python code to control the LED and handle the photoresistor input.   
 manage.py -  Starting place of Django, used to run the server.  
-Light:  
+
+**Light:**    
 urls.py  - Urls.py is used to control URL patterns, for the application.  
 views.py - Initialize the views and view sets used in the application. Handles REST requests and responses to the web interface.  
 templates/light/control.html - Used to serve the control page to the user. Buttons post mode(auto/manual) and state(ON/OFF) to control the light.  
 serializers.py - Definition of serializers used to return Mode and State objects.  
 models.py - Setting up simple models for Mode and State.  
-Project:  
+
+**Project:**  
 urls.py - Urls.py is used to control URL patterns, for the entire project.  
 settings.py - Configuration for the Django project.  
 
@@ -20,11 +22,11 @@ Before running the code ensure that Django and djangorestframework are installed
 ### Setting up the project:
 1. Clone this repository
 2. CD into the "project" folder.
-3. Run migrations:
+3. Run migrations and create superuser:
 ```bash
-    python3 manage.py makemigrations light
-    python3 manage.py migrate
-    python3 manage.py createsuperuser
+    python manage.py makemigrations light
+    python manage.py migrate
+    python manage.py createsuperuser
     Username (leave blank to use 'pi'):
     Email address: "leave blank"
     Password: password123
@@ -65,9 +67,14 @@ python Sensor.py
    * off to the state list at http://127.0.0.1:8000/state
 2. To control the program manually, select the "manual" radio button and select between ON or OFF.
 3. To use light detection, select the "auto" radio button and it will turn the light ON/OFF based on the light conditions.
+Note: If you are connecting from an external device, replace "127.0.0.1" with the IP of the PI.
 
 # Application Screenshots
+Main Page:    
+![Main Page](mainPage.PNG)
 
+Control Page:        
+![Control Page](controlPage.PNG)
 
 # Demonstration 
 

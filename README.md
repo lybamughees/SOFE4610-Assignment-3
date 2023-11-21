@@ -70,3 +70,8 @@ python Sensor.py
 
 
 # Demonstration 
+
+https://github.com/lybamughees/SOFE4610-Assignment-3/assets/66569488/a1dc6883-c3b9-4d94-a85d-907943f6e13b
+
+
+

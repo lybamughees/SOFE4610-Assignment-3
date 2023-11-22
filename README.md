@@ -3,19 +3,24 @@
 # Code Explanation
 **Root:**  
 Sensor.py - Python code to control the LED and handle the photoresistor input.   
-manage.py -  Starting place of Django, used to run the server.  
+manage.py( project) -  Starting place of Django, used to run the server.  
 
-**Light:**    
+**Light:**  
+0001_initial.py - contains all the instructions for creating the database structure
+admin.py -  Used to display models in the Django admin panel.
+apps.py - application configuration for the app.
+tests.py - unused, used for tests.
 urls.py  - Urls.py is used to control URL patterns, for the application.  
 views.py - Initialize the views and view sets used in the application. Handles REST requests and responses to the web interface.  
 templates/light/control.html - Used to serve the control page to the user. Buttons post mode(auto/manual) and state(ON/OFF) to control the light.  
 serializers.py - Definition of serializers used to return Mode and State objects.  
 models.py - Setting up simple models for Mode and State.  
 
-**Project:**  
+**myproject:**  
+asgi.py - ASGI.py facilitates communication between Python web servers and async applications
 urls.py - Urls.py is used to control URL patterns, for the entire project.  
 settings.py - Configuration for the Django project.  
-
+wsgi.py - Used as an interface between application server to connect with django
 
 # Setup
 Before running the code ensure that Django and djangorestframework are installed on your machine.
